@@ -19,7 +19,7 @@
 </head>
 
 <body>
-  <!--COba coba-->
+  <!--CObacoba-->
   <nav id="bg2" class="navbar navbar-expand-lg navbar-light">
     <div class="container">
       <a class="navbar-brand" href="index.html">VISUALISASI<br>SIMISCA BPS</a>
