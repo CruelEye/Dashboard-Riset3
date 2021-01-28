@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="visual.css">
+	<script src="https://kit.fontawesome.com/bc6bf428b6.js" crossorigin="anonymous"></script>
+	<title>Visualisasi</title>
+</head>
+<body>
+	<nav id="bg2"class="navbar navbar-expand-lg navbar-light">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">VISUALISASI<br>SIMISCA BPS</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav ml-auto">
+						<a class="nav-item nav-link " href="#">Peta Tematik <span class="sr-only">(current)</span></a>
+						<a class="nav-item nav-link active" href="#">Visualisasi</a>
+						<a class="nav-item nav-link" href="tabelDinamis.php">Tabel Dinamis</a>
+					</div>
+				</div>
+		</div>
+	</nav>
+	<i class="fas fa-home home"></i><i class="fas fa-long-arrow-alt-right panah"><div class="head">Visualisasi</div></i>
+
+	<div class="body-content">
+        <button class="tablink satker" onclick="openPage('Satker', this, '#072438')"id="defaultOpen">Satuan Kerja</button>
+        <button class="tablink pegawai" onclick="openPage('Pegawai', this, '#F4C58F')">Pegawai BPS</button>
+
+	    <div id="Satker" class="tabcontent">
+            <form action="">
+                <div class="form-group row tahun">
+                    <label for="tahun" class="col-md-2 col-form-label">Tahun</label>
+                    <div class="col-md-10">
+                        <select onchange="pilihTahun()" class="form-control isi-tahun" id="tahun">
+                            <option>2020</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+            <div class="col-md-12">
+                <div class="row row-cols-1 row-cols-md-2">
+                    <div class="col mb-4">
+                        <div class="card-title title">
+                            Jenis Daerah Administratif Tingkat II
+                        </div>
+                        <div class="">
+                            <div class="card-body  box">				  
+                            </div>				
+                        </div>
+                    </div>
+        
+                    <div class="col mb-4">
+                        <div class="card-title title">
+                            Kerentanan Secara Agregat
+                        </div>
+                        <div class="">					
+                            <div class="card-body  box">					
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-2">
+                    <div class="col mb-4">
+                        <div class="card-title title">
+                            Indeks Level Kabupaten/Kota
+                        </div>
+                        <select class="form-control mb-2" id="wilayah"style="width: 200px; ">
+                            <option>Aceh</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                        </select>
+                        <div class="">
+                            <div class="card-body  box">				  
+                            </div>				
+                        </div>
+                    </div>
+        
+                    <div class="col mb-4">
+                        <div class="card-title title">
+                            Kerentanan per Provinsi
+                        </div>
+                        <select class="form-control mb-2" id="wilayah"style="width: 200px;">
+                            <option>Aceh</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>						
+                        </select>
+                        <div class="">					
+                            <div class="card-body  box">					
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-2">
+                    <div class="col mb-4">
+                    </div>
+        
+                    <div class="col mb-4">
+                        <div class="card-title title">
+                            Judul
+                        </div>
+                        <div class="">					
+                            <div class="card-body  box">					
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="Pegawai" class="tabcontent">
+            <div class="col-md-12 judul-tab-pegawai mb-2">
+                *Hasil Diseminasi PKL Polstat STIS T.A. 2020/2021
+            </div>
+            <div class="row row-cols-1 row-cols-md-2">
+                <div class="col mb-4">
+                    <div class="card-title title-pegawai">
+                        Komposisi Jabatan Pegawai
+                    </div>
+                    <div class="">
+                        <div class="card-body  box">				  
+                        </div>				
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card-title title-pegawai">
+                        Jenis Kelamin Pegawai
+                    </div>
+                    <div class="">					
+                        <div class="card-body  box">					
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-2" style="width: 70%; margin: auto;">
+                <div class="col mb-4">
+                    <div class="card-title title-pegawai">
+                        Tingkat Pendidikan Pegawai
+                    </div>
+                    <div class="">
+                        <div class="card-body box">				  
+                        </div>				
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="foot">
+        <footer>©2021 Praktik Kerja Lapangan Politeknik Statistika STIS T.A. 2020/2021</footer>
+    </div>
+
+	<script>
+    function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
